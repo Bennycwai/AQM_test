@@ -23,7 +23,7 @@ Computer languages and programs I know: matlab, java, C++, python, R, SAS, excel
 Computer languages and programs that I want to learn: tableau, SQL
 
 <div style="width:300px; height=200px">
-![ ](/Main/Other/Pictures/Me/25percent_wai_benny_53fin.jpg)
+![ ](MD_files/figure-html/25percent_wai_benny_53fin.jpg)
 </div>
 
 ## Current projects:
@@ -35,7 +35,7 @@ This project looks at understanding the entire HIV continuum of care in Vancouve
 - Predicting student course failure at Simon Fraser University using machine learning.
 
 Below is a plot of a dimension reduction visualisation technique called "t-distributed stochastic neighbor embedding" applied on student grades of a numerical analysis course at Simon Fraser University. Different colors were used to represent various segregation of grades achieved in the course, and also highlights the natural clusters formed. R is currently being used to prepare data and run analysis. 
-![](/Main/Machine_Learning_Hobby/Home_Edition/Student_Grades/Clustering/4colors_rtsne30.png)
+![](MD_files/figure-html/4colors_rtsne30.png)
 
 ## Previous projects: 
 
@@ -44,10 +44,10 @@ Below is a plot of a dimension reduction visualisation technique called "t-distr
 This 4 month project during my undergraduate degree was to find optimal locations for food trucks based on maximizing accessibility for pedestrains as well as to minimize conflicts with brick-and-mortar restaurants. Below is a map showing the results of the non-linear mixed integer model, with various colors representing different food types that the food trucks provide.
 
 <div style="width:800px; height=700px">
-![ ](/Main/Grad/Old_comp/Foodtruck/ftmap.png)
+![ ](MD_files/figure-html/ftmap.png)
 </div>
 <div style="width:600px; height=500px">
-![ ](/Main/Grad/Old_comp/Foodtruck/legend.png)
+![ ](MD_files/figure-html/legend.png)
 </div>
 
 - Canadian criminal justice system: simulation
