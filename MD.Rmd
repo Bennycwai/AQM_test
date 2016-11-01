@@ -4,7 +4,7 @@ author: "Benny Wai"
 date: "October 26, 2016"
 output: 
   html_document:
-    keep_md: TRUE
+    keep_md: true
         
 ---
 
