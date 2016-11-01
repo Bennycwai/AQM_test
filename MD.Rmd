@@ -23,7 +23,7 @@ Computer languages and programs I know: matlab, java, C++, python, R, SAS, excel
 Computer languages and programs that I want to learn: tableau, SQL
 
 <div style="width:300px; height=200px">
-![ ](MD_files/figure-html/Wai_Benny 53fin.png)
+![ ](MD_files/figure-html/Wai_Benny_53fin.png)
 </div>
 
 ## Current projects:
