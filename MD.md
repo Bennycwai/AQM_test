@@ -15,7 +15,7 @@ Computer languages and programs I know: matlab, java, C++, python, R, SAS, excel
 Computer languages and programs that I want to learn: tableau, SQL
 
 <div style="width:300px; height=200px">
-![ ](MD_files/figure-html/Wai_Benny_53fin.png)
+<img src="MD_files/figure-html/Wai_Benny_53fin.png" alt="hi" class="inline"/>
 </div>
 
 ## Current projects:
@@ -36,10 +36,10 @@ Below is a plot of a dimension reduction visualisation technique called "t-distr
 This 4 month project during my undergraduate degree was to find optimal locations for food trucks based on maximizing accessibility for pedestrains as well as to minimize conflicts with brick-and-mortar restaurants. Below is a map showing the results of the non-linear mixed integer model, with various colors representing different food types that the food trucks provide.
 
 <div style="width:800px; height=700px">
-![ ](MD_files/figure-html/ftmap.png)
+<img src="MD_files/figure-html/ftmap.png" alt="hi" class="inline"/>
 </div>
 <div style="width:600px; height=500px">
-![ ](MD_files/figure-html/legend.png)
+<img src="MD_files/figure-html/legend.png" alt="hi" class="inline"/>
 </div>
 
 - Canadian criminal justice system: simulation
