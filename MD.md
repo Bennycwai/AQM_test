@@ -31,9 +31,9 @@ Below is a plot of a dimension reduction visualisation technique called "t-distr
 
 This 4 month project during my undergraduate degree was to find optimal locations for food trucks based on maximizing accessibility for pedestrains as well as to minimize conflicts with brick-and-mortar restaurants. Below is a map showing the results of the non-linear mixed integer model, with various colors representing different food types that the food trucks provide.
 
-<img src="MD_files/figure-html/ftmap.png" alt="hi" class="inline"/>
+<img src="MD_files/figure-html/ftmap.png" alt="food truck result map" class="inline"/>
 
-<img src="MD_files/figure-html/legend.png" alt="hi" class="inline"/>
+<img src="MD_files/figure-html/legend.png" alt="food truck legend" class="inline"/>
 
 - Canadian criminal justice system: simulation
 
