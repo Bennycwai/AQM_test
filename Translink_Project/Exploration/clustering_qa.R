@@ -44,31 +44,36 @@ plot(tsnelinked$X1,tsnelinked$X2, col = tsnelinked$cluster)
 
 rm(list = ls())
 setwd("C:/Main/AQM/Translink_Project/Exploration")
-library(tsne)
+library(Rtsne)
 library(rgl)
 library(plotly)
 library(ggplot2)
-library("dbscan")
+library(dbscan)
 
 # load and clean data
-delaysdf <- read.csv('line_41_ArriveDelays.csv', header = TRUE)
-cSub <- delaysdf[c("max_delay","mean_delay","std_dev_delay","avg_Temp","avg_TravelTime", "avg_ArriveLoad", "avg_Humidity", "avg_Visibility", "avg_WindSpeed", "duration", "n_stops")]
+delaysdf <- read.csv("line_145_ArriveDelays.csv", header = TRUE)
+#delaysdf <- trips_145_summarised
+cSub <- delaysdf[c("max_delay","mean_delay","std_dev_delay","avg_Temp","avg_TravelTime", "avg_ArriveLoad","avg_Humidity", "avg_Visibility", "avg_WindSpeed", "duration", "n_stops")]
+cSub$duration <- as.numeric(cSub$duration)
 cSub <- cSub[!duplicated(cSub),]
 cSub <- cSub[complete.cases(cSub),]
 
-z <- Rtsne(as.matrix(cSub), dim=3, perplexity = 30)
+tsneGroups <- Rtsne(as.matrix(cSub), dim=3, perplexity = 30)
 
-tsne30 <- z
+# plot raw data
+tsnedf <- as.data.frame(tsneGroups$Y)
+plot_ly(data = tsnedf, x = ~V1, y = ~V2, z = ~V3)
 
-db <- dbscan(tsne30$Y, eps = 5, minPts = 10) # eps = 2.3, minPts = 10
-tsnelinked <- tsne30$Y
+db <- dbscan(tsneGroups$Y, eps = 4, minPts = 10) # eps = 2.3, minPts = 10
+tsnelinked <- tsneGroups$Y
 tsnelinked <- data.frame(tsnelinked)
 tsnelinked$cluster <- db$cluster
 
 table(tsnelinked$cluster)
 
 #3D Scatterplot
-plot_ly(x = tsnelinked[,1], y = tsnelinked[,2], z = tsnelinked[,3], color = tsnelinked[,4], colors = palette(rainbow(14)))
+plot_ly(data = tsnelinked, x = ~X1, y = ~X2, z = ~X3, color = ~cluster, colors = palette(rainbow(14)))
+
 
 #3D Scatterplot without "outliers" group 0
 tsneFull <- tsnelinked[tsnelinked$cluster != 0,]
@@ -88,13 +93,13 @@ library(tsne)
 library(rgl)
 library(plotly)
 library(ggplot2)
-library("dbscan")
+library(dbscan)
 
 setwd("C:/Main/AQM/Translink_Project/Exploration")
 load("C:/Main/AQM/Translink_Project/Exploration/tsne30.Rds")
 load("C:/Main/AQM/Translink_Project/Exploration/tsnelinked.Rds")
 load("C:/Main/AQM/Translink_Project/Exploration/cSub.Rds")
-load("C:/Main/AQM/Translink_Project/Exploration/delaydf_cluster.Rds")
+load("C:/Main/AQM/Translink_Project/Exploration/delaydf_clust.Rds")
 load("C:/Main/AQM/Translink_Project/Exploration/tsneFull.Rds")
 
 delaydf_clust <- cbind(cSub,tsnelinked)
@@ -112,11 +117,11 @@ clusterMaxes <- clusterTable %>%
 clusterDF <- rbind(clusterMaxes, rep(0,13), clusterTable)
 # create radar chart to summarise clusters visually 
 
-radarchart(df = clusterDF, pcol = palette(rainbow(7))) #cglcol = palette(rainbow(7))
+radarchart(df = clusterDF, pcol = palette(rainbow(6))) #cglcol = palette(rainbow(7))
 
 #save(delaydf_clust, file = "delaydf_clust.Rds")
 #save(tsneFull, file = "tsneFull.Rds")
 
 #3D Scatterplot without "outliers" group 0
-plot_ly(x = tsneFull[,1], y = tsneFull[,2], z = tsneFull[,3], color = tsneFull[,4], colors = palette(rainbow(12)))
+plot_ly(x = tsneFull[,1], y = tsneFull[,2], z = tsneFull[,3], color = tsneFull[,4], colors = palette(rainbow(10)))
 
