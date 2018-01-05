@@ -1,20 +1,27 @@
 # Benny's Landing Page
 Benny Wai  
-October 26, 2016  
+January 1st, 2018
 
 
 
 ## Introduction
 
-Greetings! I am a master's student in Operations Research at Simon Fraser University. I specialize in optimisation and data science. I am often working on various projects as a part of my academic career or for self-interest. 
+Greetings! I specialize in data science and optimization. I have worked on projects with various organizations using real data, including Vancouver Coastal Health Authority, Providence Health, Translink, Simon Fraser University, and Fraser Health Authority. I have a master's degree in Operations Research.
 
-Linkedin account: https://www.linkedin.com/in/benny-wai-26a5bb11a
+Linkedin account: https://www.linkedin.com/in/benny-ask-me-wai
 
-Computer languages and programs I know: matlab, java, C++, python, R, SAS, excel open solver, latex.
+Computer languages and programs I know: python, R, SQL, Tableau, C++, matlab, java, SAS, excel open solver, latex, SPARQL, Visual Paradigm
 
-Computer languages and programs that I want to learn: tableau, SQL
+Computer languages and programs I am currently learning about: Hadoop, Azure
 
-## Current projects:
+## Previous projects: 
+
+- TransLink twitter sentiment analysis and bus delay analysis project
+
+I have worked on this project as apart of the Applied Quantitative Methods group. We developed a sentiment classifer for TransLink tweets that achieved state-of-the-art results, as well as clustered bus delays to categorize/predict various types of delays prevalent in Vancouver, BC.
+
+Below is 3 tweet topics identified using Latent Dirichlet allocation
+![](MD_files/figure-html/tweet_topics.PNG)
 
 - [Master's Thesis] Optimising HIV treatment, care, & testing programs in Vancouver, BC. 
 
@@ -25,9 +32,7 @@ This project looks at understanding the entire HIV continuum of care in Vancouve
 Below is a plot of a dimension reduction visualisation technique called "t-distributed stochastic neighbor embedding" applied on student grades of a numerical analysis course at Simon Fraser University. Different colors were used to represent various segregation of grades achieved in the course, and also highlights the natural clusters formed. R is currently being used to prepare data and run analysis. 
 ![](MD_files/figure-html/4colors_rtsne30.png)
 
-## Previous projects: 
-
-- Optimisation of food truck locations in downtown, Vancouver. 
+- Optimization of food truck locations in downtown, Vancouver. 
 
 This 4 month project during my undergraduate degree was to find optimal locations for food trucks based on maximizing accessibility for pedestrains as well as to minimize conflicts with brick-and-mortar restaurants. Below is a map showing the results of the non-linear mixed integer model, with various colors representing different food types that the food trucks provide.
 
