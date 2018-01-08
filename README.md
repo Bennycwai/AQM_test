@@ -27,6 +27,9 @@ Below is 3 tweet topics identified using Latent Dirichlet allocation
 
 This project looks at understanding the entire HIV continuum of care in Vancouver to find the optimal allocation of budget for testing, care, & treatment programs to minimize HIV morbidity, mortality, and number of infections. This ongoing project uses a large ODE epidemic compartment model to represent the continuum of care. We work closely with Vancouver Coastal Health and Providence Health to ensure the model actually reflects what occurs in practice.
 
+Below is a UML diagram of the system of ODEs that represent the entire Vancouver healthcare system for HIV patients.
+![](MD_files/figure-html/Sim_Monster_070817.png)
+
 - Predicting student course failure at Simon Fraser University using machine learning.
 
 Below is a plot of a dimension reduction visualisation technique called "t-distributed stochastic neighbor embedding" applied on student grades of a numerical analysis course at Simon Fraser University. Different colors were used to represent various segregation of grades achieved in the course, and also highlights the natural clusters formed. R is currently being used to prepare data and run analysis. 
