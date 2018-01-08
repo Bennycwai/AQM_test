@@ -25,7 +25,7 @@ Below is 3 tweet topics identified using Latent Dirichlet allocation
 
 - [Master's Thesis] Optimising HIV treatment, care, & testing programs in Vancouver, BC. 
 
-This project looks at understanding the entire HIV continuum of care in Vancouver to find the optimal allocation of budget for testing, care, & treatment programs to minimize HIV morbidity, mortality, and number of infections. This ongoing project uses a large ODE epidemic compartment model to represent the continuum of care. We work closely with Vancouver Coastal Health and Providence Health to ensure the model actually reflects what occurs in practice.
+This project looks at understanding the entire HIV continuum of care in Vancouver to find the optimal allocation of budget for testing, care, & treatment programs to minimize HIV morbidity, mortality, and number of infections. I worked closely with Vancouver Coastal Health and Providence Health stake holders and health care experts to ensure the model actually reflects what occurs in practice. My optimal solution is expected to save Vancouer $48 million CAD.
 
 Below is a UML diagram of the system of ODEs that represent the entire Vancouver healthcare system for HIV patients.
 ![](MD_files/figure-html/Sim_Monster_070817.png)
